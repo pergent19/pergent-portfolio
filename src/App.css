@@ -1,38 +1,212 @@
 .App {
-  text-align: center;
+    height: 1000vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary: #ff9428;
+  --hover: #5f3000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  
+  
+/* HEADER */
+  .header-container {
+    text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 10px 20px;
+    color: black; /* Default text color black */
+    position: fixed; /* Makes the header fixed */
+    top: 0; /* Keeps the header at the top */
+    width: 100%; /* Ensures the header spans the full width of the viewport */
+    z-index: 1000; /* Ensures the header stays on top */
+    transition: background-color 0.6s ease;
   }
-  to {
-    transform: rotate(360deg);
+  .header.open-header {
+    background-color: var(--primary);
   }
-}
+  
+  .logo {
+    font-size: 34px;
+    color: var(--primary);;
+  }
+
+  .logo.open-logo {
+    color: white;
+  }
+  
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);; /* Default orange background for the menu */
+    position: absolute;
+    left: 0;
+    text-align: left;
+    width: 100%;
+    top: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.6s ease, opacity 0.3s ease 0.3s;
+    opacity: 0; /* Start with zero opacity */
+    text-align: center;
+    justify-content: center;
+  }
+  .nav.open {
+    display: flex;
+    background: var(--primary);; /* Orange background when menu is open */
+    width: 100%;
+    height: calc(100vh - 60px);
+    opacity: 1;
+  }
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .nav ul li {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: var(--primary);; /* Orange background for each menu item */
+  }
+  
+  .nav ul li a {
+    color: white; /* Default link color black */
+    text-decoration: none;
+    font-size: 29px;
+    transition: color 0.3s ease; /* Transition for text color */
+  }
+  
+  .nav ul li a:hover {
+    color: var(--hover); /* Orange color on hover */
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: var(--primary); /* Default color black */
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Hamburger Menu Open State */
+  .hamburger.open span:nth-child(1),
+  .hamburger.open span:nth-child(3) {
+    background: white; /* Orange color when toggled */
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* END HEADER */
+
+  /* LANDING */
+  .landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    /* margin-top: 35vh; */
+    gap: 100px;
+    height: 100vh;
+  }
+
+  .landing-header-text {
+    margin-bottom: 20px; /* Adjust spacing */
+  }
+
+  .landing-header-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--primary);
+  }
+
+  .landing-header-text p {
+    font-size: 20px;
+  }
+  .landing-header-text p span {
+    color: var(--primary);
+  }
+  
+  .rounded-image {
+    border-radius: 50%; /* Makes the image round */
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+
+    /* END LANDING */
+
+
+    /* Responsive padding adjustments */
+  @media (min-width: 768px) and (max-width:1023px){
+    .landing-header-text h1 {
+      font-size: 45px;
+    }
+    .landing-header-text p {
+      font-size: 22px;
+    }
+    .landing-container {
+      padding: 60px; /* Larger padding on medium screens */
+      gap: 40px;
+    }
+    .rounded-image {
+      width: 300px;
+      height: 300px;
+    }
+    .landing-header-text {
+      align-self: end;
+    }
+    .landing-image {
+      align-self: start;
+    }
+  }
+
+  /* Small screen adjustments */
+  @media (max-width: 767px) {
+    .landing-header-text h1 {
+      font-size: 33px;
+    }
+    .landing-header-text p {
+      font-size: 17px;
+    }
+    .landing-container {
+      padding: 20px; /* Smaller padding on screens up to 767px wide (e.g., mobile screens) */
+      gap: 20px;
+    }
+    .landing-header-text {
+      align-self: end;
+    }
+    .landing-image {
+      align-self: start;
+    }
+  } 
+  
