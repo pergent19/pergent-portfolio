@@ -44,7 +44,7 @@
   
   .logo {
     font-size: 34px;
-    color: var(--primary);;
+    color: var(--primary);
   }
 
   .logo.open-logo {
@@ -175,6 +175,12 @@
 
     /* END LANDING */
 
+
+    /* ABOUT And Skills*/
+    .about-skills-container {
+      height: 100vh;
+    }
+    /* END ABOUT And Skills*/
     /* ABOUT */
   .about-container {
     display: flex;
@@ -230,6 +236,9 @@
     /* END ABOUT */
 
   /* SKILLS */
+  .skills-container {
+    /* margin-bottom: 50px; */
+  }
   .skills-header-text h2 {
     font-size: 30px;
     font-weight: 700;
@@ -263,6 +272,81 @@
     margin-bottom: 20px;
   }
 
+  /* Project */
+  .project-container {
+    height: 100vh;
+  }
+  .project-header-text h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--primary);
+  }
+  .project-image {
+    width: 500px;
+    height: 300px;
+    /* width: 100%;
+    height: auto; */
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .project-image-container {
+    text-align: center;
+    position: relative;
+  }
+  .project-image-container div {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  .project-image-container div:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .project-image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-20px);
+    border-radius: 10px;
+  }
+  
+  .overlay-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .overlay-description {
+    font-size: 16px;
+    margin: 10px 30px;
+    color: white;
+  }
+
+  .overlay-skills-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .overlay-skills {
+    font-size: 14px;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  /* End Project */
 
     /* Responsive padding adjustments */
   @media (min-width: 768px) and (max-width:1024px){
@@ -303,6 +387,9 @@
       width: 250px;
       height: 250px;
     }
+    .about-skills-container {
+      height: 110vh;
+    }
   }
 
   /* Small screen adjustments */
@@ -339,12 +426,26 @@
       font-size: 13px;
     }
     .about-image { 
-      width: 240px;
-      height: 240px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; 
+      
     }
     .skills li {
       width: 60px;
     }
-
+    .about-skills-container {
+      height: 135vh;
+    }
+    .project-image {
+      width: 300px;
+      height: 200px;
+  }
   } 
   
+  /* FOR SE SCREEN */
+  @media (max-width: 375px) {
+    .project-container {
+      margin-top: 250px;
+    }
+  }
