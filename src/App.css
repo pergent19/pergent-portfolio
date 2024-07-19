@@ -1,5 +1,5 @@
 .App {
-    height: 1000vh;
+    /* padding: 100px */
 }
 
 :root {
@@ -11,6 +11,12 @@
   font-family: "Nanum Pen Script", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
   
@@ -101,7 +107,7 @@
   .hamburger span {
     height: 3px;
     width: 25px;
-    background: var(--primary); /* Default color black */
+    background: var(--primary); 
     margin: 4px 0;
     transition: 0.4s;
   }
@@ -109,7 +115,7 @@
   /* Hamburger Menu Open State */
   .hamburger.open span:nth-child(1),
   .hamburger.open span:nth-child(3) {
-    background: white; /* Orange color when toggled */
+    background: white; 
   }
   
   .hamburger.open span:nth-child(1) {
@@ -129,13 +135,17 @@
   /* LANDING */
   .landing-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
-    /* margin-top: 35vh; */
-    gap: 100px;
+    gap: 10px;
     height: 100vh;
+
+    /* wrapper */
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    /* wrapper */
   }
 
   .landing-header-text {
@@ -155,19 +165,107 @@
   .landing-header-text p span {
     color: var(--primary);
   }
-  
+
   .rounded-image {
-    border-radius: 50%; /* Makes the image round */
-    width: 200px; /* Adjust size as needed */
-    height: 200px; /* Adjust size as needed */
-    object-fit: cover; /* Ensures the image covers the entire container */
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
   }
 
     /* END LANDING */
 
+    /* ABOUT */
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 100px;
+
+    /* wrapper */
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    /* wrapper */
+    margin-bottom: 20px;
+  }
+
+  .about-header-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--primary);
+  }
+
+  .about-header-text p {
+    font-size: 19px;
+  }
+
+  .about-header-text p span {
+    color: var(--primary);
+  }
+
+  .company-container {
+    display: flex;
+    justify-content: start;
+  }
+
+  .company-container span {
+    height: 3px;
+    width: 50px;
+    background: var(--primary);
+    margin: 17px 10px;
+    transition: 0.4s;
+  }
+
+  .about-image {
+    border-radius: 5%;
+    width: 320px; /* Adjust size as needed */
+    height: 320px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: 100% 30%;
+  }
+    /* END ABOUT */
+
+  /* SKILLS */
+  .skills-header-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--primary);
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto 60px auto;
+    padding: 20px 0;
+  }
+
+  .skills li {
+    list-style: none;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 20px;
+    width: 120px;
+  }
+
+  .skills li img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+
 
     /* Responsive padding adjustments */
-  @media (min-width: 768px) and (max-width:1023px){
+  @media (min-width: 768px) and (max-width:1024px){
     .landing-header-text h1 {
       font-size: 45px;
     }
@@ -175,8 +273,8 @@
       font-size: 22px;
     }
     .landing-container {
-      padding: 60px; /* Larger padding on medium screens */
       gap: 40px;
+      justify-content: center;
     }
     .rounded-image {
       width: 300px;
@@ -187,6 +285,23 @@
     }
     .landing-image {
       align-self: start;
+    }
+    .about-container {
+      width: 100%;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .skills-container {
+      width: 100%;
+      padding: 20px;
+    }
+    .about-header-text p { 
+      font-size: 20px;
+    }
+    .about-image { 
+      width: 250px;
+      height: 250px;
     }
   }
 
@@ -201,6 +316,8 @@
     .landing-container {
       padding: 20px; /* Smaller padding on screens up to 767px wide (e.g., mobile screens) */
       gap: 20px;
+      justify-content: center;
+      width: 100%;
     }
     .landing-header-text {
       align-self: end;
@@ -208,5 +325,26 @@
     .landing-image {
       align-self: start;
     }
+    .about-container {
+      width: 100%;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .skills-container {
+      width: 100%;
+      padding: 20px;
+    }
+    .about-header-text p { 
+      font-size: 13px;
+    }
+    .about-image { 
+      width: 240px;
+      height: 240px;
+    }
+    .skills li {
+      width: 60px;
+    }
+
   } 
   
