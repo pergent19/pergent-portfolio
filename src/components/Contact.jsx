@@ -15,7 +15,6 @@ export default function Contact() {
                 <input type="number" name="number" className="contact-form-text" placeholder="your phone" />
                 <textarea className="contact-form-text" name="message" placeholder="your message">
                 </textarea>
-                <div data-netlify-recaptcha="true"></div>
                 <button type="submit" className="contact-form-btn" >Send</button>
             </form>
         </div>
