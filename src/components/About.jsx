@@ -3,7 +3,7 @@ import Skills from './Skills'
 
 export default function About() {
   return (
-    <div className='about-skills-container'>
+    <div className='about-skills-container' id='about'>
         <div className='about-container'>
             <div className='about-header-text'>
                 <h2>About me 🛠️</h2>

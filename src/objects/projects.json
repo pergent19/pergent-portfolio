@@ -1,0 +1,41 @@
+[{
+    "title": "React Food Order",
+    "description": "A simple Fullstack Web application ordering app that uses mongodb database and authentication system.",
+    "tech": "MERN Stack",
+    "link": "https://rfordering.netlify.app",
+    "imgSrc": "images/react-ordering.png",
+    "type": "fullstack"
+    },
+    {
+    "title": "Workout Buddy",
+    "description": "A simple Fullstack Web application workout management app that uses mongodb database to keep track your workouts and it uses authentication.",
+    "tech": "MERN Stack",
+    "link": "https://wbuddy.netlify.app/",
+    "imgSrc": "images/wbuddy.png",
+    "type": "fullstack"   
+    },
+    {
+    "title": "Bitcapp",
+    "description": "A simple static website that has cryptocurrency information.",
+    "tech": "Quasar Framework",
+    "link": "https://bitcapp.netlify.app/#/",
+    "imgSrc": "images/bitcapp.png",
+    "type": "static" 
+    },
+    {
+    "title": "Seoul Station Korean Barbeque",
+    "description": "A simple static website for Korean Barbeque Restaurant.",
+    "tech": "HTML CSS",
+    "link": "https://pergent19.gitlab.io/capstone-1/",
+    "imgSrc": "images/samgy.png",
+    "type": "static"
+    },
+    {
+    "title": "Boss Burger Restaurant",
+    "description": "A simple static website for Burger Restaurant",
+    "tech": "HTML CSS",
+    "link": "https://restaurant-food.netlify.app/",
+    "imgSrc": "images/burger.png",
+    "type": "static" 
+    }
+]
