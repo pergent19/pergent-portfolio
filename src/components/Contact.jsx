@@ -8,7 +8,7 @@ export default function Contact() {
                 Contact Me 💌
             </div>
             <div className="questions">Have a question or want to work together?</div>
-            <form className="contact-form" method="POST">
+            <form name="contact" className="contact-form" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="text" name="name" className="contact-form-text" placeholder="your name" />
                 <input type="email" name="email" className="contact-form-text" placeholder="your email" />
