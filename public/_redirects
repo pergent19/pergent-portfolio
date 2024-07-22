@@ -1,1 +1,5 @@
+# Redirect all paths to index.html for SPA routing
 /* /index.html 200
+
+# Handle Netlify form submissions (adjust as needed)
+/form-submission /index.html 200
