@@ -236,9 +236,9 @@
     /* END ABOUT */
 
   /* SKILLS */
-  .skills-container {
-    /* margin-bottom: 50px; */
-  }
+  /* .skills-container {
+    margin-bottom: 50px;
+  } */
   .skills-header-text h2 {
     font-size: 30px;
     font-weight: 700;
@@ -274,7 +274,7 @@
 
   /* Project */
   .project-container {
-    height: 100vh;
+    height: 120vh;
   }
   .project-header-text h2{
     font-size: 30px;
@@ -285,8 +285,6 @@
   .project-image {
     width: 500px;
     height: 300px;
-    /* width: 100%;
-    height: auto; */
     display: block;
     transition: transform 0.3s ease;
   }
@@ -341,12 +339,171 @@
   
   .overlay-skills {
     font-size: 14px;
-    color: white;
-    background-color: var(--primary);
+    color: grey;
+    background-color: white;
     border-radius: 20px;
     padding: 5px 10px;
   }
+
+  .btn-project {
+    margin-top: 7px;
+    border-radius: 2cm;
+    text-decoration: none;
+    color:white;
+    background-color: var(--primary);
+    padding: 10px;
+  }
+
+  .btn-project:hover {
+    background-color: var(--hover);
+    transition: all 0.3s ease-in-out;
+  }
   /* End Project */
+
+  /* Contact */
+  .contact-container  {
+    background-color: #fcdec0;
+    padding: 50px 0;
+  }
+  .questions {
+    font-size: 16px;
+    color:var(--hover);
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .contact-header-text {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--primary);
+  }
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+  
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #2f3542;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  
+  .contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #34495e;
+  
+  }
+  
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;	
+  }
+  
+  
+  .contact-form-btn{
+    float: right;
+    border: 0;
+    background-color: var(--primary) ;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 40px;
+  }
+  
+  .contact-form-btn:hover{
+    background: var(--hover)
+  }
+  /* End Contact */
+
+/*Footer*/
+
+.footerPad{
+	padding-bottom: 100px;
+  text-align: center;
+  color:  rgba(255, 255, 255, .5);
+}
+
+.footer-bg{
+	background-color: var(--primary);
+}
+
+.copyright {
+	padding-top: 120px;
+}
+.copy-right-2020 {
+  font-weight: bolder;
+  color: #f35e08;
+}
+
+.follow{
+	padding-top: 50px;
+}
+.sm{
+	margin-top: 50px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.sm a{
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	background: #2c3e50;
+	color: #f35e08;
+	margin: 0 6px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+	font-size: 22px;
+  text-decoration: none;
+	-webkit-box-shadow: -3px 3px 23px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: -3px 3px 23px 0px rgba(0, 0, 0, 0.75);
+	
+
+}
+
+.sm a i{
+	transition: 0.4s all;
+	
+
+}
+
+.sm a:hover{
+	background: #5FFFF1;	
+}
+
+.sm a:hover > i {
+	transform: scale(1.6) rotate(25deg);
+}
+
+#topBtn{
+	/*position: bottom;*/
+	margin-bottom: 103px;
+	bottom: 40px;
+	font-size: 22px;
+	width: 50px;
+	height: 50px;
+	background: #f35e08;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+/* End Footer*/
 
     /* Responsive padding adjustments */
   @media (min-width: 768px) and (max-width:1024px){
@@ -389,6 +546,9 @@
     }
     .about-skills-container {
       height: 110vh;
+    }
+    .project-container {
+      height: 170vh;
     }
   }
 
@@ -440,12 +600,16 @@
     .project-image {
       width: 300px;
       height: 200px;
-  }
+    }
+    .project-container {
+      height: 145vh;
+    }
   } 
   
   /* FOR SE SCREEN */
   @media (max-width: 375px) {
     .project-container {
       margin-top: 250px;
+      height: 200vh;
     }
   }
