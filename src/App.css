@@ -274,7 +274,7 @@
 
   /* Project */
   .project-container {
-    height: 150vh;
+    /* height: 150vh; */
     margin-bottom: 100px;
   }
   .project-header-text h2{
@@ -548,9 +548,9 @@
     .about-skills-container {
       height: 110vh;
     }
-    .project-container {
+    /* .project-container {
       height: 170vh;
-    }
+    } */
   }
 
   /* Small screen adjustments */
@@ -602,9 +602,9 @@
       width: 300px;
       height: 200px;
     }
-    .project-container {
+    /* .project-container {
       height: 160vh;
-    }
+    } */
 
     .overlay-text {
       font-size: 15px;
@@ -626,8 +626,8 @@
   
   /* FOR SE SCREEN */
   @media (max-width: 375px) {
-    .project-container {
+    /* .project-container {
       margin-top: 250px;
       height: 220vh;
-    }
+    } */
   }
