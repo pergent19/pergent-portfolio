@@ -275,6 +275,7 @@
   /* Project */
   .project-container {
     height: 150vh;
+    margin-bottom: 100px;
   }
   .project-header-text h2{
     font-size: 30px;
