@@ -1,0 +1,97 @@
+[{
+    "name": "ReactJS",
+    "img": "reactjs.png"
+ },
+ {
+    "name": "Redux",
+    "img": "Redux.png"
+ },
+ {
+    "name": "VueJS",
+    "img": "Vue.js.png"
+ },
+ {
+    "name": "NodeJS",
+    "img": "nodejs.png"
+ },
+ {
+    "name": "Javascript",
+    "img": "js.png"
+ },
+ {
+    "name": "HTML",
+    "img": "html5.png"
+ },
+ {
+    "name": "CSS",
+    "img": "css.png"
+ }, 
+ {
+    "name": "ExpressJS",
+    "img": "Express.png"
+ },
+ {
+    "name": "Typescript",
+    "img": "Typescript.png"
+ },
+ {
+    "name": "Bootstrap",
+    "img": "boots.png"
+ },
+ {
+    "name": "Tailwind CSS",
+    "img": "Tailwind.png"
+ },
+ {
+    "name": "Java",
+    "img": "java.png"
+ },
+ {
+    "name": "Springboot",
+    "img": "spring.png"
+ },
+ {
+    "name": "Sass",
+    "img": "sass.png"
+ },
+ {
+    "name": "MongoDB",
+    "img": "mongodb.png"
+ },
+ {
+    "name": "MySQL",
+    "img": "MySQL.png"
+ },
+ {
+    "name": "PostgresSQL",
+    "img": "PostgresSQL.png"
+ },
+ {
+    "name": "Postman",
+    "img": "Postman.png"
+ },
+ {
+    "name": "API",
+    "img": "api.png"
+ },
+ {
+    "name": "Git",
+    "img": "Git.png"
+ },
+ {
+    "name": "Github",
+    "img": "Github.png"
+ },
+ {
+    "name": "Gitlab",
+    "img": "Gitlab.png"
+ },
+ {
+    "name": "Azure",
+    "img": "Azure.png"
+ },
+ {
+    "name": "VS Code",
+    "img": "VS.png"
+ }
+]

@@ -166,8 +166,8 @@
       font-size: 20px;
     }
     .about-image { 
-      width: 250px;
-      height: 250px;
+      width: 350px;
+      height: 350px;
     }
   }
 
@@ -205,10 +205,13 @@
       font-size: 13px;
     }
     .about-image { 
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%; 
       
+    }
+    .skills {
+      justify-content: center;
     }
     .skills li {
       width: 60px;

@@ -12,7 +12,7 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     margin: 20px auto 60px auto;
     padding: 20px 0;
 }
@@ -27,7 +27,7 @@
     align-items: center;
     font-size: 18px;
     margin: 0 20px;
-    width: 120px;
+    width: 70px;
 }
 
 .skills li img {
