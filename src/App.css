@@ -178,7 +178,7 @@
 
     /* ABOUT And Skills*/
     .about-skills-container {
-      height: 100vh;
+      /* height: 100vh; */
     }
     /* END ABOUT And Skills*/
     /* ABOUT */
@@ -288,11 +288,25 @@
     height: 300px;
     display: block;
     transition: transform 0.3s ease;
+    box-shadow: -3px 3px 23px 0px rgba(0, 0, 0, 0.75);
   }
   .project-image-container {
     text-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    opacity: 0;
+    transform: translateY(100px); /* Start from below */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for content */
   }
+
+  .project-image-container.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+
   .project-image-container div {
     position: relative;
     display: inline-block;
@@ -359,6 +373,35 @@
     background-color: var(--hover);
     transition: all 0.3s ease-in-out;
   }
+
+  .tab-container {
+    padding: 20px;
+  }
+  
+  .tab-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .tab {
+    padding: 7px 50px;
+    border: none;
+    font-size: 17px;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.5s ease, background 0.5s ease, color 0.5s ease;
+  }
+  
+  .tab.active {
+    background-color: var(--primary);
+    color: white;
+    transform: scale(1.1);
+    /* transition: background-color 0.7s, color 0.7s; */
+  }
+
+  
   /* End Project */
 
   /* Contact */
@@ -546,7 +589,7 @@
       height: 250px;
     }
     .about-skills-container {
-      height: 110vh;
+      /* height: 110vh; */
     }
     /* .project-container {
       height: 170vh;
@@ -596,7 +639,7 @@
       width: 60px;
     }
     .about-skills-container {
-      height: 135vh;
+      /* height: 135vh; */
     }
     .project-image {
       width: 300px;
@@ -620,6 +663,11 @@
     }
 
     .btn-project {
+      font-size: 12px;
+    }
+
+    .tab {
+      padding: 3px 20px;
       font-size: 12px;
     }
   } 
