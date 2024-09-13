@@ -1,0 +1,110 @@
+.header-container {
+    text-align: center;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 10px 20px;
+    color: black; /* Default text color black */
+    position: fixed; /* Makes the header fixed */
+    top: 0; /* Keeps the header at the top */
+    width: 100%; /* Ensures the header spans the full width of the viewport */
+    z-index: 1000; /* Ensures the header stays on top */
+    transition: background-color 0.6s ease;
+  }
+  .header.open-header {
+    background-color: var(--primary);
+  }
+  
+  .logo {
+    font-size: 34px;
+    color: var(--primary);
+  }
+
+  .logo.open-logo {
+    color: white;
+  }
+  
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);; /* Default orange background for the menu */
+    position: absolute;
+    left: 0;
+    text-align: left;
+    width: 100%;
+    top: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.6s ease, opacity 0.3s ease 0.3s;
+    opacity: 0; /* Start with zero opacity */
+    text-align: center;
+    justify-content: center;
+  }
+  .nav.open {
+    display: flex;
+    background: var(--primary);; /* Orange background when menu is open */
+    width: 100%;
+    height: calc(100vh - 60px);
+    opacity: 1;
+  }
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .nav ul li {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: var(--primary);; /* Orange background for each menu item */
+  }
+  
+  .nav ul li a {
+    color: white; /* Default link color black */
+    text-decoration: none;
+    font-size: 29px;
+    transition: color 0.3s ease; /* Transition for text color */
+  }
+  
+  .nav ul li a:hover {
+    color: var(--hover); /* Orange color on hover */
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: var(--primary); 
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Hamburger Menu Open State */
+  .hamburger.open span:nth-child(1),
+  .hamburger.open span:nth-child(3) {
+    background: white; 
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+
+  

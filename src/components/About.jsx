@@ -1,5 +1,6 @@
 import React from 'react'
 import Skills from './Skills'
+import './About.css'
 
 export default function About() {
   return (

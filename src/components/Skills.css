@@ -1,0 +1,36 @@
+.skills-container {
+
+}
+
+.skills-header-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--primary);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto 60px auto;
+    padding: 20px 0;
+}
+
+.skills li {
+    list-style: none;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 20px;
+    width: 120px;
+}
+
+.skills li img {
+    width: 50px;
+    margin-bottom: 20px;
+}

@@ -1,5 +1,6 @@
 import React, {useState, useEffect } from 'react'
 import projects from '../objects/projects.json'
+import './Project.css'
 
 export default function Project() {
     const [activeTab, setActiveTab] = useState('All');
