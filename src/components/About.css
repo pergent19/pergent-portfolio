@@ -8,14 +8,13 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 
   /* wrapper */
   width: 90%;
   max-width: 1080px;
-  margin: 0 auto;
+  margin: 100px auto;
   /* wrapper */
-  margin-bottom: 20px;
 }
 
 .about-header-text h2 {
@@ -51,6 +50,6 @@
   width: 320px; /* Adjust size as needed */
   height: 320px; /* Adjust size as needed */
   object-fit: cover; /* Ensures the image covers the entire container */
-  object-position: 100% 30%;
+  object-position: center
 }
 
