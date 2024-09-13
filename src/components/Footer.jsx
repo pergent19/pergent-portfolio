@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Footer.css';
 
 export default function Footer() {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -46,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className="copyright">
-          PERGENT GALANG II<span className="copy-right-2020">&copy;2020</span>
+          PERGENT GALANG II<span className="copy-right-2020">&copy;2024</span>
         </div>
 
       </div>

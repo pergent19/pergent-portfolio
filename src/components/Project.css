@@ -1,0 +1,242 @@
+.project-container {
+    margin-bottom: 100px;
+}
+
+.project-header-text h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--primary);
+}
+
+.project-image {
+    width: 500px;
+    height: 300px;
+    display: block;
+    transition: transform 0.3s ease;
+    box-shadow: -3px 3px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+  .project-image-container {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(100px); /* Start from below */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for content */
+}
+
+.project-image-container.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+.project-image-container div {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.project-image-container div:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+.project-image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-20px);
+    border-radius: 10px;
+}
+  
+.overlay-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.overlay-description {
+    font-size: 16px;
+    margin: 10px 30px;
+    color: white;
+}
+
+.overlay-skills-container {
+    display: flex;
+    justify-content: center;
+}
+  
+.overlay-skills {
+    font-size: 14px;
+    color: grey;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.btn-project {
+    margin-top: 7px;
+    border-radius: 2cm;
+    text-decoration: none;
+    color:white;
+    background-color: var(--primary);
+    padding: 10px;
+}
+
+.btn-project:hover {
+    background-color: var(--hover);
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-container {
+    padding: 20px;
+}
+  
+.tab-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.tab {
+    padding: 7px 50px;
+    border: none;
+    font-size: 17px;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.5s ease, background 0.5s ease, color 0.5s ease;
+}
+  
+.tab.active {
+    background-color: var(--primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+/* Responsive padding adjustments */
+@media (min-width: 768px) and (max-width:1024px){
+    .landing-header-text h1 {
+      font-size: 45px;
+    }
+    .landing-header-text p {
+      font-size: 22px;
+    }
+    .landing-container {
+      gap: 40px;
+      justify-content: center;
+    }
+    .rounded-image {
+      width: 300px;
+      height: 300px;
+    }
+    .landing-header-text {
+      align-self: end;
+    }
+    .landing-image {
+      align-self: start;
+    }
+    .about-container {
+      width: 100%;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .skills-container {
+      width: 100%;
+      padding: 20px;
+    }
+    .about-header-text p { 
+      font-size: 20px;
+    }
+    .about-image { 
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  /* Small screen adjustments */
+  @media (max-width: 767px) {
+    .landing-header-text h1 {
+      font-size: 33px;
+    }
+    .landing-header-text p {
+      font-size: 17px;
+    }
+    .landing-container {
+      padding: 20px; /* Smaller padding on screens up to 767px wide (e.g., mobile screens) */
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+    }
+    .landing-header-text {
+      align-self: end;
+    }
+    .landing-image {
+      align-self: start;
+    }
+    .about-container {
+      width: 100%;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .skills-container {
+      width: 100%;
+      padding: 20px;
+    }
+    .about-header-text p { 
+      font-size: 13px;
+    }
+    .about-image { 
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; 
+      
+    }
+    .skills li {
+      width: 60px;
+    }
+    .project-image {
+      width: 300px;
+      height: 200px;
+    }
+
+    .overlay-text {
+      font-size: 15px;
+    }
+  
+    .overlay-description {
+      font-size: 12px;
+    }
+  
+    .overlay-skills {
+      font-size: 10px;
+      padding: 2px 17px;
+    }
+
+    .btn-project {
+      font-size: 12px;
+    }
+
+    .tab {
+      padding: 3px 20px;
+      font-size: 12px;
+    }
+  } 
