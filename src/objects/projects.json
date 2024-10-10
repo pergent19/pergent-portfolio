@@ -1,49 +1,58 @@
-[{
+[
+  {
     "title": "React Food Order",
     "description": "A simple Fullstack Web application ordering app that uses mongodb database and authentication system.",
     "tech": "MERN Stack",
     "link": "https://rfordering.netlify.app",
     "imgSrc": "images/react-ordering-new.png",
     "type": "React/Node"
-    },
-    {
+  },
+  {
     "title": "Workout Buddy",
     "description": "A simple Fullstack Web application workout management app and it uses authentication.",
     "tech": "MERN Stack",
     "link": "https://wbuddy.netlify.app/",
     "imgSrc": "images/wbuddy-new.png",
-    "type": "React/Node"   
-    },
-    {
+    "type": "React/Node"
+  },
+  {
     "title": "Bitcapp",
     "description": "A simple static website that has cryptocurrency information.",
     "tech": "Quasar Framework",
     "link": "https://bitcapp.netlify.app/#/",
     "imgSrc": "images/bitcapp-new.png",
-    "type": "Static" 
-    },
-    {
+    "type": "Static"
+  },
+  {
     "title": "Seoul Station Korean Barbeque",
     "description": "A simple static website for Korean Barbeque Restaurant.",
     "tech": "HTML CSS Bootstrap",
     "link": "https://pergent19.gitlab.io/capstone-1/",
     "imgSrc": "images/samgy-new.png",
     "type": "Static"
-    },
-    {
+  },
+  {
     "title": "Boss Burger Restaurant",
     "description": "A simple static website for Burger Restaurant",
     "tech": "HTML SCSS Javascript",
     "link": "https://restaurant-food.netlify.app/",
     "imgSrc": "images/burger-new.png",
-    "type": "Static" 
-    },
-    {
+    "type": "Static"
+  },
+  {
     "title": "PSG Todo Application",
     "description": "A simple todo application",
     "tech": "ReactJS Redux",
     "link": "https://psgtodo.netlify.app/",
     "imgSrc": "images/todoapp-new.png",
-    "type": "React" 
-    }
+    "type": "React"
+  },
+  {
+    "title": "Smart Trip AI",
+    "description": "A Trip Planner generator using GEMINI AI",
+    "tech": "VITE Firebase AI",
+    "link": "https://smarttripai.vercel.app/",
+    "imgSrc": "images/smart-trip.png",
+    "type": "React"
+  }
 ]
