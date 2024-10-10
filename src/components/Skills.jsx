@@ -2,6 +2,7 @@ import React from 'react'
 import './Skills.css'
 import skills from '../objects/skills.json'
 
+
 export default function Skills() {
   return (
     <div className='skills-container wrapper'>

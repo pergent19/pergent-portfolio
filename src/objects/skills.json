@@ -1,97 +1,138 @@
-[{
-    "name": "ReactJS",
-    "img": "reactjs.png"
- },
- {
-    "name": "Redux",
-    "img": "Redux.png"
- },
- {
-    "name": "VueJS",
-    "img": "Vue.js.png"
- },
- {
-    "name": "NodeJS",
-    "img": "nodejs.png"
- },
- {
-    "name": "Javascript",
-    "img": "js.png"
- },
- {
-    "name": "HTML",
-    "img": "html5.png"
- },
- {
-    "name": "CSS",
-    "img": "css.png"
- }, 
- {
-    "name": "ExpressJS",
-    "img": "Express.png"
- },
- {
-    "name": "Typescript",
-    "img": "Typescript.png"
- },
- {
-    "name": "Bootstrap",
-    "img": "boots.png"
- },
- {
-    "name": "Tailwind CSS",
-    "img": "Tailwind.png"
- },
- {
-    "name": "Java",
-    "img": "java.png"
- },
- {
-    "name": "Springboot",
-    "img": "spring.png"
- },
- {
-    "name": "Sass",
-    "img": "sass.png"
- },
- {
-    "name": "MongoDB",
-    "img": "mongodb.png"
- },
- {
-    "name": "MySQL",
-    "img": "MySQL.png"
- },
- {
-    "name": "PostgresSQL",
-    "img": "PostgresSQL.png"
- },
- {
-    "name": "Postman",
-    "img": "Postman.png"
- },
- {
-    "name": "API",
-    "img": "api.png"
- },
- {
-    "name": "Git",
-    "img": "Git.png"
- },
- {
-    "name": "Github",
-    "img": "Github.png"
- },
- {
-    "name": "Gitlab",
-    "img": "Gitlab.png"
- },
- {
-    "name": "Azure",
-    "img": "Azure.png"
- },
- {
-    "name": "VS Code",
-    "img": "VS.png"
- }
-]
+[
+   {
+     "name": "ReactJS",
+     "img": "reactjs.png",
+     "category": "Fullstack Development"
+   },
+   {
+     "name": "Redux",
+     "img": "Redux.png",
+     "category": "State Management"
+   },
+   {
+     "name": "VueJS",
+     "img": "Vue.js.png",
+     "category": "Frontend Development"
+   },
+   {
+     "name": "NodeJS",
+     "img": "nodejs.png",
+     "category": "Fullstack Development"
+   },
+   {
+     "name": "Javascript",
+     "img": "js.png",
+     "category": "Web Development"
+   },
+   {
+     "name": "HTML",
+     "img": "html5.png",
+     "category": "Web Development"
+   },
+   {
+     "name": "CSS",
+     "img": "css.png",
+     "category": "Web Development"
+   },
+   {
+     "name": "ExpressJS",
+     "img": "Express.png",
+     "category": "Fullstack Development"
+   },
+   {
+     "name": "Typescript",
+     "img": "Typescript.png",
+     "category": "Others"
+   },
+   {
+     "name": "Bootstrap",
+     "img": "boots.png",
+     "category": "UI Tools"
+   },
+   {
+     "name": "Tailwind CSS",
+     "img": "Tailwind.png",
+     "category": "UI Tools"
+   },
+   {
+     "name": "Java",
+     "img": "java.png",
+     "category": "Backend Development"
+   },
+   {
+     "name": "Springboot",
+     "img": "spring.png",
+     "category": "Backend Development"
+   },
+   {
+     "name": "Sass",
+     "img": "sass.png",
+     "category": "Web Development"
+   },
+   {
+     "name": "MongoDB",
+     "img": "mongodb.png",
+     "category": "Fullstack Development"
+   },
+   {
+     "name": "MySQL",
+     "img": "MySQL.png",
+     "category": "Database"
+   },
+   {
+     "name": "PostgresSQL",
+     "img": "PostgresSQL.png",
+     "category": "Database"
+   },
+   {
+     "name": "Postman",
+     "img": "Postman.png",
+     "category": "Development Tool"
+   },
+   {
+     "name": "API",
+     "img": "api.png",
+     "category": "Backend Development"
+   },
+   {
+     "name": "Git",
+     "img": "Git.png",
+     "category": "Version Control System"
+   },
+   {
+     "name": "Github",
+     "img": "Github.png",
+     "category": "Version Control System"
+   },
+   {
+     "name": "Gitlab",
+     "img": "Gitlab.png",
+     "category": "Version Control System"
+   },
+   {
+     "name": "Azure",
+     "img": "Azure.png",
+     "category": "Cloud Services"
+   },
+   {
+     "name": "VS Code",
+     "img": "VS.png",
+     "category": "Development Tool"
+   },
+   {
+     "name": "Shadcn/UI",
+     "img": "shadcd.svg",
+     "category": "UI Tools"
+   },
+   {
+      "name": "Gemini AI",
+      "img": "Gemini.svg",
+      "category": "AI"
+    },   
+    {
+      "name": "Vite JS",
+      "img": "Vite.js.svg",
+      "category": "AI"
+    }
+ ]
+ 
