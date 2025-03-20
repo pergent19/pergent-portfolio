@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/pergent.galangii",
+      "iconClass": "fab fa-facebook text-danger"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/pergent_ii",
+      "iconClass": "fab fa-twitter text-danger"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/pergent/",
+      "iconClass": "fab fa-instagram text-danger"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/pergentino-galang-ii-899758193/",
+      "iconClass": "fab fa-linkedin text-danger"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/pergent19",
+      "iconClass": "fab fa-github text-danger"
+    },
+    {
+      "name": "GitLab",
+      "url": "https://gitlab.com/pergent19",
+      "iconClass": "fab fa-gitlab text-danger"
+    }
+  ]
+  

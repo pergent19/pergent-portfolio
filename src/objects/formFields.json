@@ -1,0 +1,27 @@
+[
+    {
+      "type": "text",
+      "name": "name",
+      "className": "contact-form-text",
+      "placeholder": "your name"
+    },
+    {
+      "type": "email",
+      "name": "email",
+      "className": "contact-form-text",
+      "placeholder": "your email"
+    },
+    {
+      "type": "number",
+      "name": "number",
+      "className": "contact-form-text",
+      "placeholder": "your phone"
+    },
+    {
+      "type": "textarea",
+      "name": "message",
+      "className": "contact-form-text",
+      "placeholder": "your message"
+    }
+  ]
+  
