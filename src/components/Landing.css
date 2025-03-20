@@ -30,9 +30,14 @@
 }
 
 .rounded-image {
-    border-radius: 50%; 
+    border-radius: 100%; 
     width: 200px; 
     height: 200px; 
-    object-fit: cover; 
+    object-fit: scale-down; 
 } 
 
+
+/* .dp-image {
+    width: 400px; 
+    height: 300px;
+} */

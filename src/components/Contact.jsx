@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import formFields from '../objects/formFields.json'
 import './Contact.css';
 
 export default function Contact() {
@@ -26,13 +27,47 @@ export default function Contact() {
                 action="/contact/?success=true"
                 className="contact-form" >
                     <input type="hidden" name="form-name" value="contact" />
-                    <input type="text" name="name" className="contact-form-text" placeholder="your name" />
+                    {formFields.map((field, index) =>
+                        field.type === "textarea" ? (
+                          <textarea
+                            key={index}
+                            name={field.name}
+                            className={field.className}
+                            placeholder={field.placeholder}
+                          />
+                        ) : (
+                          <input
+                            key={index}
+                            type={field.type}
+                            name={field.name}
+                            className={field.className}
+                            placeholder={field.placeholder || ""}
+                            value={field.value || ""}
+                          />
+                        )
+                      )}
+                    {/* <input type="text" name="name" className="contact-form-text" placeholder="your name" />
                     <input type="email" name="email" className="contact-form-text" placeholder="your email" />
                     <input type="number" name="number" className="contact-form-text" placeholder="your phone" />
                     <textarea className="contact-form-text" name="message" placeholder="your message">
-                    </textarea>
+                    </textarea> */}
                     <button type="submit" className="contact-form-btn" >Send</button>
             </form>
+
+            {/* Success Modal */}
+            {success && (
+              <div className="modal-overlay">
+                <div className="modal">
+                  <h2 className="modal-title">🎉 Thank You!</h2>
+                  <p className="modal-message">
+                    Your message has been sent successfully.
+                  </p>
+                  <button onClick={() => setSuccess(false)} className="modal-btn">
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
         </div>
     </div>
   )
