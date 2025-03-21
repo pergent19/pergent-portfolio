@@ -6,7 +6,7 @@ const Project = () => {
     const [activeTab, setActiveTab] = useState('All');
     const [contentVisible, setContentVisible] = useState(false);
 
-    const tabs = ['All', 'React/Node', 'React', 'Static'];
+    const tabs = useMemo(() => ['All', 'React/Node', 'React', 'Static'], []);
 
     const handleTabClick = useCallback((tab) => {
         setActiveTab(tab);
@@ -36,7 +36,7 @@ const Project = () => {
               {tab}
             </button>
           )),
-        [activeTab]
+        [activeTab, handleTabClick, tabs]
       );
 
   return (
