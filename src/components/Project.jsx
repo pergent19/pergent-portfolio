@@ -1,18 +1,22 @@
-import React, {useState, useEffect } from 'react'
+import React, { useState, useEffect, memo, useCallback, useMemo  } from 'react';
 import projects from '../objects/projects.json'
 import './Project.css'
 
-export default function Project() {
+const Project = () => {
     const [activeTab, setActiveTab] = useState('All');
     const [contentVisible, setContentVisible] = useState(false);
 
     const tabs = ['All', 'React/Node', 'React', 'Static'];
 
-    const handleTabClick = (tab) => {
+    const handleTabClick = useCallback((tab) => {
         setActiveTab(tab);
-    };
+    }, []);
 
-    const filteredProject = activeTab === 'All' ? projects : projects.filter(project => project.type === activeTab);
+    const filteredProject = useMemo(() => {
+        return activeTab === 'All'
+          ? projects
+          : projects.filter((project) => project.type === activeTab);
+      }, [activeTab]);
 
     useEffect(() => {
         
@@ -20,6 +24,20 @@ export default function Project() {
         const timer = setTimeout(() => setContentVisible(true), 400); 
         return () => clearTimeout(timer); 
     }, [activeTab]);
+
+    const tabButtons = useMemo(
+        () =>
+          tabs.map((tab) => (
+            <button
+              key={tab}
+              className={`tab ${activeTab === tab ? 'active' : ''}`}
+              onClick={() => handleTabClick(tab)}
+            >
+              {tab}
+            </button>
+          )),
+        [activeTab]
+      );
 
   return (
     <div className='project-container wrapper' id="projects">
@@ -29,22 +47,14 @@ export default function Project() {
 
         <div className="tab-container">
             <div className="tab-list">
-                {tabs.map((tab) => (
-                <button
-                    key={tab}
-                    className={`tab ${activeTab === tab ? 'active' : ''}`}
-                    onClick={() => handleTabClick(tab)}
-                >
-                    {tab}
-                </button>
-                ))}
+                {tabButtons}
             </div>
         </div>
 
         <div className={`project-image-container ${contentVisible ? 'visible' : ''}`}>
                 {filteredProject.map((project, index) => (
                     <div key={index}> 
-                        <img className='project-image' src={`${process.env.PUBLIC_URL}/${project.imgSrc}`} alt="project" />
+                        <img className='project-image' src={`${process.env.PUBLIC_URL}/${project.imgSrc}`} alt={`${project.title} project`} loading="lazy" />
                         <div className='overlay'>
                             <span className='overlay-text'>{project.title}</span>
                             <p className='overlay-description'>{project.description}</p>
@@ -57,3 +67,5 @@ export default function Project() {
     </div>
   )
 }
+
+export default memo(Project);

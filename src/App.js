@@ -1,10 +1,10 @@
 import './App.css';
-import Header from './components/Header.jsx';
-import Landing from './components/Landing.jsx';
-import About from './components/About.jsx';
-import Project from './components/Project.jsx';
-import Contact from './components/Contact.jsx'
-import Footer from './components/Footer.jsx';
+import Header from './components/Header';
+import Landing from './components/Landing';
+import About from './components/About';
+import Project from './components/Project';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (

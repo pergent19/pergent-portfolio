@@ -21,7 +21,7 @@
     text-align: center;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
     opacity: 0;
     transform: translateY(100px); /* Start from below */
@@ -241,5 +241,8 @@
     .tab {
       padding: 3px 20px;
       font-size: 12px;
+    }
+    .project-image-container {
+      justify-content: center;
     }
   } 
