@@ -40,7 +40,6 @@ export default function Contact() {
                             name={field.name}
                             className={field.className}
                             placeholder={field.placeholder || ""}
-                            value={field.value || ""}
                           />
                         )
                       )}
