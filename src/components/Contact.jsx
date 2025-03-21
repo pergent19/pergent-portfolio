@@ -17,9 +17,7 @@ export default function Contact() {
                 Contact Me 💌
             </div>
             <div className="questions">Have a question or want to work together?</div>
-            {success && (
-            <p style={{ color: "green" }}>Thanks for your message! </p>
-            )}
+
             <form 
                 name="contact" 
                 method="POST" 
@@ -46,11 +44,6 @@ export default function Contact() {
                           />
                         )
                       )}
-                    {/* <input type="text" name="name" className="contact-form-text" placeholder="your name" />
-                    <input type="email" name="email" className="contact-form-text" placeholder="your email" />
-                    <input type="number" name="number" className="contact-form-text" placeholder="your phone" />
-                    <textarea className="contact-form-text" name="message" placeholder="your message">
-                    </textarea> */}
                     <button type="submit" className="contact-form-btn" >Send</button>
             </form>
 
