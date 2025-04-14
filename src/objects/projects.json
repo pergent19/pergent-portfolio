@@ -1,5 +1,13 @@
 [
   {
+    "title": "Ari Lash Luxe",
+    "description": "A modern and luxurious booking platform for lash, nail, and facial services. Built with React and Vite, featuring a sleek stepper-based modal and dynamic scheduling.",
+    "tech": "Vite Redux TailwindCSS",
+    "link": "https://arilashluxe.netlify.app/",
+    "imgSrc": "images/arilashluxe.png",
+    "type": "React"
+  },
+  {
     "title": "React Food Order",
     "description": "A simple Fullstack Web application ordering app that uses mongodb database and authentication system.",
     "tech": "MERN Stack",
